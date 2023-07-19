@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    position: relative;
+    margin-bottom:90px;
+}
+
+h1 {
+    padding-left: 5%;
+    padding-bottom: 2px;
+    font-style: italic;
+}
+
+header {
+    left: 0;
+    right: 0;
+    background-color: #3455eb;
+    display: flex;
+
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h2 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3455eb;
+    font-style: italic;
+    color: #3455eb;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+.sobre { 
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.sobre > img {
+    float: left;
+    max-height: 400px;
+    object-fit: fill;
+}
+
+.descricao-loja {
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+
+.produtos {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 2%;
+}
+
+.produto {
+    display: block;
+    width: 218px;
+}
+
+.produto button {
+    background-color: #3455eb;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 100%;
+
+
+} 
+
+.produto img {
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .conteudo {
+      max-width: 641px;
+    }
+  
+    .produtos {
+      grid-template-columns: repeat(2, 50%);
+      column-gap: 10px;
+    }
+  }
+  
+  /* Phone Styles */
+  @media only screen and (max-width: 640px) {
+    .conteudo {
+      max-width: 100%;
+      padding: 0 10px;
+
+    }
+
+        .sobre { 
+            display: flex;
+            flex-direction: column;
+        }
+  
+    .produtos {
+      grid-template-columns: 100%;
+      column-gap: 10px;
+    }
+  
+    .produto {
+      width: 100%;
+    }
+  }
